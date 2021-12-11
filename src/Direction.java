@@ -1,5 +1,3 @@
-package org.cis120;
-
 /**
  * This file holds an enumeration called Direction, which is used in
  * GameObj.java to indicate the direction an object should move after it
@@ -9,5 +7,5 @@ package org.cis120;
  * possible cases of the input to the enum cases)
  */
 public enum Direction {
-    UP, DOWN, LEFT, RIGHT;
+    UP, DOWN, LEFT, RIGHT
 }

@@ -1,4 +1,4 @@
-package org.cis120;// imports necessary libraries for Java swing
+// imports necessary libraries for Java swing
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -121,7 +121,7 @@ public class RunBrickBreaker implements Runnable {
                 JFrame ins = new JFrame();
                 String i = "Welcome to the leaderboard of the " +
                         "best Brick Breaker players!\n\n" +
-                         court.getLeaderboard();
+                         GameCourt.getLeaderboard();
                 JOptionPane.showMessageDialog(
                         ins, i, "Leaderboard", JOptionPane.INFORMATION_MESSAGE);
             }

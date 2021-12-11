@@ -1,5 +1,3 @@
-package org.cis120;
-
 import java.awt.*;
 
 public class DoubleBrick extends Brick {
@@ -10,9 +8,9 @@ public class DoubleBrick extends Brick {
 
     @Override
     public void interact(GameCourt g, Ball b) {
-        Color one = g.getDoubleBrickColorOne();
-        Color two = g.getDoubleBrickColorTwo();
-        Color c = g.getCourtColor();
+        Color one = GameCourt.getDoubleBrickColorOne();
+        Color two = GameCourt.getDoubleBrickColorTwo();
+        Color c = GameCourt.getCourtColor();
         if (b.intersects(this) && this.getColor().equals(one)) {
             this.setColor(two);
             b.bounce(b.hitObj(this));

@@ -1,5 +1,3 @@
-package org.cis120;
-
 import java.awt.Graphics;
 
 /**

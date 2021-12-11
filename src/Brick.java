@@ -1,5 +1,3 @@
-package org.cis120;
-
 import java.awt.*;
 
 /** Brick game object which is a rectangle created from many parameters.
@@ -44,7 +42,7 @@ public class Brick extends GameObj {
     }
 
     public void interact(GameCourt g, Ball b) {
-        Color c = g.getCourtColor();
+        Color c = GameCourt.getCourtColor();
         if (b.intersects(this) && !this.color.equals(c)) {
             g.incrementScore();
             this.setColor(c);

@@ -1,5 +1,3 @@
-package org.cis120;
-
 import javax.swing.*;
 
 public class Game {

@@ -1,5 +1,3 @@
-package org.cis120;
-
 import java.awt.*;
 
 public class SpeedBrick extends Brick {
@@ -10,7 +8,7 @@ public class SpeedBrick extends Brick {
 
     @Override
     public void interact(GameCourt g, Ball b) {
-        if (b.intersects(this) && !this.getColor().equals(g.getCourtColor())) {
+        if (b.intersects(this) && !this.getColor().equals(GameCourt.getCourtColor())) {
             b.speedChange(true, 1);
         }
         super.interact(g, b);
